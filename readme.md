@@ -1,1 +1,1 @@
-https://adamjed34.github.io/goit-markup-hw-03/
+https://adamjed34.github.io/goit-markup-hw-03
