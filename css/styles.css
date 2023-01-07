@@ -19,6 +19,7 @@ ul,
 p {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 img {
@@ -34,21 +35,26 @@ img {
   cursor: pointer;
 }
 
-/* HEADER */
+/* ====================HEADER=================== */
 
-.container {
-  display: flex;
-  align-items: center;
+.header {
+  background: #ffffff;
 }
 
-/* .container {
-   width: 1600px;
-   background: #ffffff; 
-} */
+.header .container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 1200px;
+  height: 80px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .logo {
   margin-right: 93px;
-  margin-left: 215px;
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
@@ -69,9 +75,6 @@ img {
 .navigation-list {
   display: flex;
   align-items: center;
-}
-
-.navigation-list {
   text-decoration: none;
 }
 
@@ -88,9 +91,6 @@ img {
 .portfolio {
   margin-right: 46px;
 }
-/* .navigation-list-item::not(:last-child) {
-    margin-right: 46px;
-} */
 
 .navigation-list-link:hover,
 .navigation-list-link:focus,
@@ -107,6 +107,16 @@ img {
   color: var(--main-color);
 }
 
+.header-contact {
+  display: flex;
+  align-items: center;
+  margin-left: 364px;
+}
+
+.contact-mail {
+  margin-right: 50px;
+}
+
 .contact-mail,
 .contact-phone {
   font-weight: 500;
@@ -116,16 +126,29 @@ img {
   color: #757575;
   text-decoration: none;
 }
-/* END HEADER */
+/* ==================END HEADER=================== */
 
-/* MAIN */
+/* =====================MAIN======================= */
+
+/* MAIN HERO */
 
 .hero,
 .footer {
   background-color: #2f303a;
 }
 
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+
 .hero-header-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -136,14 +159,17 @@ img {
 }
 
 .hero-header-btn {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
   background-color: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 15);
   border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
-  align-items: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
 }
@@ -151,8 +177,34 @@ img {
 .hero-header-btn-title {
   color: white;
 }
+/* END MAIN HERO */
+
+/* MAIN DESCRIPTION */
+
+.main-description .container {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 94px;
+}
+
+.main-description-list {
+  display: flex;
+}
+
+.main-description-item {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.main-description-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .main-description-title {
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
@@ -166,6 +218,27 @@ img {
   color: #757575;
 }
 
+/* END MAIN DESCRIPTION */
+
+/* WHAT WE DO */
+
+.main-what-we-do .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  /* justify-content: center; */
+  padding: 94px 15px;
+}
+
+.main-what-we-do-list {
+  display: flex;
+  padding-top: 50px;
+}
+
+.main-what-we-do-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .main-what-we-do-header,
 .team-header {
   font-weight: bold;
@@ -173,6 +246,30 @@ img {
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+/* END WHAT WE DO */
+
+/* OUR TEAM */
+
+.team {
+  background: #f5f4fa;
+}
+
+.team .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 15px;
+}
+
+.team-list {
+  display: flex;
+  padding-top: 50px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-personal {
@@ -192,11 +289,38 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/* END MAIN */
 
-/* FOOTER */
+/* END OUR TEAM */
+
+/* =====================END MAIN=================== */
+
+/* =====================FOOTER===================== */
+
+.footer .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+
+.container .logo {
+  width: 145px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-list:not(:last-child) {
+  padding-bottom: 9px;
+}
 
 .address {
+  display: flex;
+  padding-top: 20px;
   font-style: normal;
 }
 .address-link-lokalization {
@@ -217,13 +341,30 @@ img {
   text-decoration: none;
 }
 
-/* END FOOTER */
+/* =====================END FOOTER===================== */
 
 /* ======================PORTFOLIO PAGE======================= */
 
-/* MAIN */
+/* ======================MAIN========================== */
 
 /* SECTION FILTER */
+
+.filter .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 94px;
+  justify-content: center;
+}
+
+.filter-list {
+  display: flex;
+  width: 572px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 /* THE TEXT CONTENT OF THE BUTTONS */
 .filter-button-1,
@@ -246,6 +387,20 @@ img {
 .filter-button-5 {
   background: #f5f4fa;
   border-radius: 4px;
+  height: 38px;
+}
+.filter-button-1,
+.filter-button-5 {
+  width: 121px;
+}
+.filter-button-2 {
+  width: 93px;
+}
+.filter-button-3 {
+  width: 114px;
+}
+.filter-button-4 {
+  width: 91px;
 }
 
 .filter-button-1:hover,
@@ -261,9 +416,47 @@ img {
   color: #ffffff;
   background-color: var(--main-color);
 }
+
 /* END SECTION FILTER */
 
 /* SECTION PROJECTS */
+
+.projects .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.container .projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project-header-space {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+}
+
+.projects-list-project1,
+.projects-list-project2,
+.projects-list-project3,
+.projects-list-project4,
+.projects-list-project5,
+.projects-list-project6,
+.projects-list-project7,
+.projects-list-project8,
+.projects-list-project9 {
+  margin-left: 30px;
+  margin-top: 30px;
+}
 
 .project1-header,
 .project2-header,
